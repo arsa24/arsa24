@@ -23,7 +23,7 @@ export default function ContactsSection() {
             <Phone />
             <span>+62 838 3418 5253</span>
           </a>
-          <a href="#" className="flex gap-2">
+          <a href="https://github.com/arsa24" className="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
