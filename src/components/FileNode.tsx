@@ -27,7 +27,7 @@ export default function FileNode({
     <div className="pl-2">
       <div className="py-2">
         <div
-          className="flex gap-2 items-center cursor-pointer hover:text-blue-400"
+          className="flex gap-2 items-center cursor-pointer hover:text-latte-mauve hover:dark:text-mocha-mauve"
           onClick={() => {
             if (isFolder) setOpen(!open);
             else onFileClick?.(node.name);

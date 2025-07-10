@@ -16,7 +16,7 @@ export default function StatusBarFile({
     <div
       className={`px-4 py-2 flex items-center gap-2 cursor-pointer ${
         active
-          ? "bg-mocha-crust text-mocha-text"
+          ? "dark:bg-mocha-crust bg-latte-crust dark:text-mocha-text text-latte-text"
           : "bg-transparent hover:bg-mocha-surface"
       }`}
       onClick={onClick}

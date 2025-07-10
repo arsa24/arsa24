@@ -8,15 +8,13 @@ import Footer from "./sections/Footer";
 
 export default function App() {
   return (
-    <main className="w-full scroll-smooth min-h-screen dark:bg-mocha-base bg-latte-base text-latte-text dark:text-mocha-text">
+    <main className="w-full scroll-smooth min-h-screen dark:bg-mocha-base bg-latte-base text-latte-text dark:text-mocha-text flex flex-col items-center justify-center">
       <TopNavbar />
-      <div className="min-h-screen flex flex-col items-center">
-        <HomeSection />
-        <AboutSection />
-        <ProjectsSection />
-        <ContactsSection />
-        <Footer />
-      </div>
+      <HomeSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ContactsSection />
+      <Footer />
       <BottomNavbar />
     </main>
   );

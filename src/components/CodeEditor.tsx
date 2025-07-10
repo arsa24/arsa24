@@ -11,6 +11,7 @@ import {
 import type { FileTree } from "./FileNode";
 import FileNode from "./FileNode";
 import { useState } from "react";
+import { about_me, main_rs } from "../assets/about";
 
 interface StatusBarFileType {
   fileName: string;
@@ -20,13 +21,10 @@ interface StatusBarFileType {
 
 export default function CodeEditor() {
   const { isDarkMode } = useDarkMode();
-  
+
   const [activeStatusBarFile, setActiveStatusBarFile] = useState<
     StatusBarFileType[]
-  >([
-    { active: true, fileName: "main.rs", open: true },
-    { active: false, fileName: "about.rs", open: true },
-  ]);
+  >([{ active: true, fileName: "main.rs", open: true }, { active: false, fileName: "about_me.rs", open: true }]);
 
   const fileTree: FileTree[] = [
     {
@@ -38,14 +36,14 @@ export default function CodeEditor() {
           type: "folder",
           children: [
             {
+              name: "about_me.rs",
+              type: "file",
+            },
+            {
               name: "main.rs",
               type: "file",
             },
           ],
-        },
-        {
-          name: "readme.md",
-          type: "file",
         },
       ],
     },
@@ -127,9 +125,7 @@ export default function CodeEditor() {
               wrapLines
               wrapLongLines
             >
-              {activeFile
-                ? `// ${activeFile.fileName}\nfn main() {\n  println!("Hello, world!");\n}`
-                : "// No file open"}
+              {activeFile?.fileName === "main.rs" ? main_rs : about_me}
             </SyntaxHighlighter>
           </div>
         </div>
