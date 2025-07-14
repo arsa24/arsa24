@@ -5,7 +5,7 @@ export default function ContactsSection() {
   return (
     <section
       id="contacts"
-      className="container grid grid-cols-1 md:grid-cols-2 items-center justify-center md:gap-12 md:px-16 min-h-screen"
+      className="container grid grid-cols-1 md:grid-cols-2 items-center justify-center md:gap-12 md:px-16 min-h-screen px-6"
     >
       <div className="flex flex-col gap-4">
         <div>
