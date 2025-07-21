@@ -1,6 +1,6 @@
 # Hi, I'm Arsa 👋
 
-Mobile dev who loves turning ideas into apps.  
+Mobile dev who loves turning ideas into apps.
 Mainly cooking stuff with **Flutter**, sometimes messing with **Rust** & **JavaScript**.
 
 ---
