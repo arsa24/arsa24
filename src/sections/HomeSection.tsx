@@ -12,7 +12,7 @@ export default function HomeSection() {
           <h1 className="text-2xl md:text-4xl font-semibold">
             <span>Hi, i'm</span>{" "}
             <span className="font-bold bg-gradient-to-r dark:from-mocha-mauve dark:via-mocha-lavender dark:to-mocha-peach from-latte-mauve via-latte-lavender to-latte-peach bg-clip-text text-transparent">
-              Arij Sahmawan,
+              Arsa,
             </span>
             <br />
             Mobile Developer

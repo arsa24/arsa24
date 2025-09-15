@@ -17,7 +17,7 @@ export default function ContactsSection() {
         <div className="flex flex-col gap-4">
           <a href="#" className="flex gap-2">
             <Mail />
-            <span>arijsahmawan@outlook.com</span>
+            <span>arsavonkuromi@outlook.com</span>
           </a>
           <a href="#" className="flex gap-2">
             <Phone />
